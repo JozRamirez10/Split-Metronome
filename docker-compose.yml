@@ -1,0 +1,14 @@
+services:
+  split_metronome:
+    container_name: split_metronome
+    build:
+      context: .
+    ports:
+      - "7001:8001"
+    env_file:
+      - .env
+    volumes:
+      - ${TMP_DIR}:${TMP_DIR}
+    environment:
+      - TZ=America/Mexico_City
+    restart: unless-stopped

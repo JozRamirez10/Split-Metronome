@@ -1,0 +1,16 @@
+# --- Web Server ---
+fastapi
+uvicorn
+pydantic
+python-dotenv
+
+# --- Audio and IA process ---
+librosa
+soundfile
+BeatNet
+
+# --- Critical Dependencies (Fixed for compatibility) ---
+madmom==0.16.1
+setuptools==68.2.2
+pyaudio
+numpy==1.23.5
